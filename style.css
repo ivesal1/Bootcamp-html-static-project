@@ -1,0 +1,537 @@
+*{
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 20px #cdcdcd;
+    margin-bottom:2px ;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+.nav-mobile{
+    display: none;
+}
+.vila{
+    margin-left:50px ;
+}
+.nav-bar ul li{
+    display: flex;
+    align-items: center;
+}
+
+.ul-right{
+    display: flex;
+    margin-right:200px;
+}
+.dropdown{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row-reverse;
+}
+.dropdown li{
+    margin-right: 20px;
+}
+.nav-right {
+    display: flex;
+}
+.nav-bar ul:first-child {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.nav-bar ul:first-child li:hover {
+    background-color: #f8fafb!important;
+}
+.nav-bar ul:first-child li {
+   padding: 10px;
+   border-radius: 8px;
+}
+.ali-logo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: right;
+}
+.ul-left li{
+    margin: 0 10px;
+}
+.ul-left li svg{
+    margin-left: 10px;
+}
+select{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tour-form-sec{
+    position: relative;
+}
+.main-pic{
+    margin-top: 70px;
+}
+.main-pic img{
+    width: 100vw;
+}
+.tour-form{
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+}
+.tour-form-tilte{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 120px;
+    margin:20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.tour-form-tilte li{
+    margin: 0 35px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tour-mode{
+    display: flex;
+    justify-content: flex-end;
+    margin:30px 40px 30px 0;
+}
+.tour-mode select{
+    border: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+input {
+    border:1px solid #cdcdcd ;
+}
+.tour-input{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding:0 40px 40px 40px;
+}
+.tour-input button {
+    background-color: #fdb713;
+    height: 48px;
+    width: 185px;
+    text-align: center;
+    border-radius: 10px;
+}
+.city {
+    width: 455px;
+    height: 48px;
+    border-radius: 10px;
+}
+.date{
+    width: 275px;
+    margin: 0 10px;
+    height: 48px;
+    border-radius: 10px;
+}
+.pass{
+    margin-left:10px ;
+    height: 48px;
+    width: 200px;
+    border-radius: 10px;
+}
+.tour-input input {
+    text-align: right;
+    padding: 10px;
+    opacity: .5;
+}
+.slider-pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.slider-pic img {
+    border-radius: 15px;
+}
+.slider-pic img:first-child{
+    margin-right: 30px;
+}
+.policy{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    width: 1220px;
+}
+.sec-3{
+    padding: 0 110px;
+    display: flex;
+    justify-content: center;
+}
+.policy svg{
+    margin: 10px 0;
+    fill: #14A2B8;
+    width: 40px;
+    background-color: #E8F8FB;
+    padding: 10px;
+    height: 40px;
+    border-radius: 50%;
+}
+.sec-3-title{
+    font-weight: 700;
+}
+.sec-3-des {
+    color: #6c7680;
+    line-height: 30px;
+}
+.policy button{
+    color: #0177DB;
+    margin-top: 10px;
+}
+.sec-4-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+    text-align: right;
+    width: 1220px;
+}
+.sec-4-des img{
+    position: relative;
+    bottom: 0;
+}
+.sec-4{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.alibaba-app-title{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.alibaba-app-des{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.alibaba-app-link{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 50px;
+    color: #1C86DF;
+}
+h2 {
+    text-align: right;
+    margin-top:30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.sec-5{
+    display: flex;
+    justify-content: center;
+}
+.regular-q{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 1220px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    padding: 15px 10px;
+    box-shadow: 0 1px 10px #E0E0E0;
+}
+.regular-q-title{
+    display: flex;
+    align-items: center;
+    margin-left: 230px;
+    font-weight: 700;
+}
+.regular-q-title svg{
+    width: 30px;
+    fill: #14A2B8;
+    background-color: #E8F8FB;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left:10px;
+}
+footer{
+    background-color: #fff;
+    margin-top: 60px;
+}
+.footer-1{
+     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.footer-pic-title{
+    font-size: .875rem;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.footer-sec-1{
+    display: flex;
+    justify-content: space-around;
+    padding-top:40px;
+    width: 1220px;
+}
+.footer-sec-1-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.footer-divider{
+    width: 1220px;
+    background-color: #E0E0E0;
+    height: 1px;
+}
+.footer-sec-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 1220px;
+}
+.footer-2{
+    display: flex;
+    justify-content: center;
+}
+.adjust-divider{
+    display: flex;
+    justify-content: center;
+}
+.footer-pages{
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+.services-title{
+    margin: 0 65px;
+}
+.footer-pages ul {
+    line-height: 30px;
+    font-size:.876rem ;
+    font-weight: 400;
+}
+.footer-pages div div{
+    margin: 20px 0;
+}
+.license-logo ul{
+    display: flex;
+}
+.license-logo ul li{
+    border-radius: 10px; 
+    margin: 50px 10px;
+}
+.footer-alibaba{
+    margin: 50px 0;
+}
+.phone{
+    margin: 20px 0;
+}
+.footer-sec-3{
+    display: flex;
+    justify-content: space-around;
+    width: 1220px;
+    align-items: center;
+    margin:20px 0 ;
+    color: #828A93;
+}
+.footer-3{
+    display: flex;
+    justify-content: center;
+}
+.footer-sec-3 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-sec-3 ul li{
+    margin: 0 20px;
+}
+.footer-sec-3 ul li:first-child{
+    margin-left: 0;
+}
+.footer-sec-3 ul li:last-child{
+    margin-right: 0;
+}
+.copy-right{
+    font-size: 0.75rem;
+}
+@media (min-width:300px) and (max-width:1024px){
+    .nav-mobile{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        box-shadow: 0 1px 10px #cdcdcd;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100vw;
+    }
+    .nav-bar{
+    display: none;
+    }
+    .ali-logo-mobile{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        align-items: center;
+    }
+    .main-pic{
+        margin-top: 60px;
+        width:100vw;
+    }
+    .hamb-menu div{
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+    }
+    .hamb-menu div:nth-child(2){
+       margin: 5px 0;
+
+    }
+    .tour-form-tilte{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border-bottom:0 ;
+        padding: 0;
+        margin: 0;
+        width: 70vw;
+        border: 1px solid #cdcdcd;
+        border-radius:15px ;
+    }
+    .tour-form{
+        border: 0;
+    }
+    .tour-form-tilte li{
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0;
+    }
+    .form-tour{
+        display: none;
+    }
+    .forgen{
+        display: none !important;
+    }
+    .vila{
+        margin-left: 0;
+    }
+    .parvaz , .bus , .hotel{
+        border-right: 1px solid #cdcdcd;
+        border-bottom: 1px solid #cdcdcd;
+    }
+   .hotel{
+    border-bottom:0 ;
+   }
+   .train , .tour-baba {
+    border-bottom: 1px solid #cdcdcd;
+   }
+   .slider-pic{
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+   }
+   .slider-pic img:first-child{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.slider-pic img{
+    width: 80vw;
+}
+.sec-3{
+    padding: 0;
+}
+.policy{
+    display: block;
+    width: 80vw;
+}
+.sec-4-des{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80vw;
+    padding: 20px 0;
+}
+.alibaba-app-link{
+    margin: 30px 0;
+}
+.mobile-ali{
+    display: none;
+}
+.regular-q{
+    width: 80vw;
+}
+.regular-q-title{
+    margin: 0;
+    text-align: right;
+}
+.edameh{
+    display: none;
+}
+.footer-sec-1 {
+    display: block;
+    width: 80vw;
+}
+.footer-pages{
+    display: none;
+}
+.license-logo ul {
+  display: none;
+}
+.footer-alibaba{
+    margin: 20px 0 0 10px;
+}
+
+.footer-sec-2{
+    display: block;
+    text-align: center;
+    width: 80vw;
+    padding-bottom: 20px;
+}
+.footer-divider{
+    width: 80vw;
+}
+.footer-sec-3{
+    display: block;
+    width: 80vw;
+    text-align: center;
+    line-height: 20px;
+}
+.footer-sec-3 ul li {
+    margin: auto 10px;
+}
+}
