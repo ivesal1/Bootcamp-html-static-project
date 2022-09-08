@@ -27,7 +27,9 @@
     display: flex;
     align-items: center;
 }
-
+.slider-repalce{
+    display: none !important;
+}
 .ul-right{
     display: flex;
     margin-right:200px;
@@ -78,6 +80,7 @@ select{
 }
 .main-pic{
     margin-top: 70px;
+
 }
 .main-pic img{
     width: 100vw;
@@ -163,6 +166,9 @@ input {
     display: flex;
     justify-content: center;
     margin-top: 200px;
+}
+.slider-replace{
+    display: none;
 }
 .slider-pic img {
     border-radius: 15px;
@@ -298,6 +304,9 @@ footer{
     padding-top:40px;
     width: 1220px;
 }
+.footer-sec-1-des img{
+    margin-left: 10px;
+}
 .footer-sec-1-des{
     display: flex;
     justify-content: center;
@@ -399,6 +408,13 @@ footer{
     .nav-bar{
     display: none;
     }
+    .main-pic img{
+        margin-top: 20px;
+        /* height: 120px; */
+    }
+   .regular-q-title div{
+    line-height: 27px;
+   }
     .ali-logo-mobile{
         display: flex;
         flex-direction: row-reverse;
@@ -418,6 +434,14 @@ footer{
        margin: 5px 0;
 
     }
+    
+    .slider-repalce{
+        margin-top: 60px;
+        display: block;
+    }
+    .slider-pic{
+        object-fit: cover;
+    }
     .tour-form-tilte{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -427,7 +451,7 @@ footer{
         border-bottom:0 ;
         padding: 0;
         margin: 0;
-        width: 70vw;
+        width: 80vw;
         border: 1px solid #cdcdcd;
         border-radius:15px ;
     }
@@ -468,6 +492,8 @@ footer{
    .slider-pic img:first-child{
     margin-right: 0;
     margin-bottom: 20px;
+    margin-top: 60px;
+
 }
 .slider-pic img{
     width: 80vw;
@@ -506,6 +532,14 @@ footer{
     display: block;
     width: 80vw;
 }
+.footer-sec-1-des img{
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+}
+.footer-pic-title{
+    margin-top: 10px;
+}
 .footer-pages{
     display: none;
 }
@@ -535,3 +569,38 @@ footer{
     margin: auto 10px;
 }
 }
+@media (min-width:768px)and (max-width:1024px){
+    .main-pic img{
+    width: 100vw;
+    height: 50%;
+    margin-top: 20px;
+}
+
+}
+@media (min-width:425px)and (max-width:768){
+     .main-pic img {
+    width: 100vw;
+    height: 60% !important;
+    margin-top: 20px;
+}
+}
+@media (max-width:425px){
+     .main-pic img{
+    width: 100vw;
+    height: 120px;
+    margin-top: 20px;
+}
+.slider-pic img:first-child{
+        display: none;
+    }
+    .slider-pic img:last-child{
+        display: none;
+    }
+    .slider-repalce{
+        display: block !important;
+    }
+}
+@media (min-width:425px) {
+    
+}
+
