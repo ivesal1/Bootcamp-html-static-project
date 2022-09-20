@@ -6,6 +6,10 @@ const sec3Tag = document.querySelector('.policy')
 const questionTag = document.querySelector('.sec-5 div div')
 const licensTag = document.querySelector('.license-logo ul')
 const socialTag = document.querySelector('.footer-sec-3 div ul')
+const footerMenuTag = document.querySelector('.footer-menu')
+const footerMenuTag1 = document.querySelector('.footer-menu1')
+const footerMenuTag2 = document.querySelector('.footer-menu2')
+
 const navLeft = [
     { text : 'ورود یا ثبت نام', icon:'<svg style="margin-right:10px" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.25 12.75A3.75 3.75 0 0 1 21 16.5v3.75a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V16.5a3.75 3.75 0 0 1 3.75-3.75h10.5Zm0 1.5H6.75A2.25 2.25 0 0 0 4.5 16.5v3h15v-3a2.25 2.25 0 0 0-2.118-2.246l-.132-.004ZM12 3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 1 1 0-9Zm0 1.5a3 3 0 1 0-.001 5.999A3 3 0 0 0 12 4.5Z" fill-rule="evenodd"></path></svg>'},
     { text: 'پیگیری خرید' , icon :'<svg style="margin-right:10px" viewBox="0 0 24 24" width="1.5em" fill="currentColor" class="ml-1" data-v-3b94ded0=""><path d="M6.75 21C4.682 21 3 18.982 3 16.5a.75.75 0 0 1 .75-.75H6l.006-11.146a.75.75 0 0 1 .011-.264C6.19 3.563 6.904 3 7.714 3a1.74 1.74 0 0 1 1.698 1.34c.016.077.11.16.23.16.124 0 .215-.082.232-.16.173-.777.887-1.34 1.698-1.34.81 0 1.524.563 1.696 1.34.018.077.111.16.232.16.12 0 .214-.083.232-.16.172-.777.886-1.34 1.696-1.34.811 0 1.525.563 1.697 1.34.018.078.11.16.232.16.121 0 .215-.083.231-.16A1.74 1.74 0 0 1 19.285 3a1.74 1.74 0 0 1 1.686 1.295.752.752 0 0 1 .029.203V18.75a2.253 2.253 0 0 1-2.118 2.246L18.75 21h-12ZM19.285 4.5c-.122 0-.214.083-.232.165C18.881 5.439 18.168 6 17.357 6c-.81 0-1.524-.561-1.696-1.335-.018-.082-.11-.165-.233-.165-.122 0-.214.083-.232.165C15.024 5.439 14.312 6 13.5 6c-.81 0-1.523-.561-1.697-1.335-.017-.082-.109-.165-.231-.165-.122 0-.215.083-.233.165C11.167 5.439 10.453 6 9.643 6c-.811 0-1.524-.561-1.696-1.335-.018-.082-.11-.165-.233-.165-.094 0-.17.05-.208.11L7.5 15.75h8.249a.75.75 0 0 1 .75.75c0 1.6.943 2.91 2.127 2.996l.123.004a.75.75 0 0 0 .75-.75V4.62a.245.245 0 0 0-.215-.12Zm-4.233 12.75H4.571c.25 1.293 1.133 2.25 2.179 2.25h9.207a4.891 4.891 0 0 1-.905-2.25Zm-1.556-6a.75.75 0 1 1 0 1.5H9.75a.75.75 0 1 1 0-1.5h3.747Zm3.754-3a.75.75 0 1 1 0 1.5H9.748a.75.75 0 1 1 0-1.5h7.502Z" fill-rule="evenodd"></path></svg>'},
@@ -81,7 +85,29 @@ const social = [
     {icon:'<svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor" class="block" title="youtube logo"><path d="M19.128 6.858c.248.248.427.558.519.897.528 2.127.406 5.487.01 7.696a2.012 2.012 0 0 1-1.416 1.416c-1.241.338-6.239.338-6.239.338s-4.997 0-6.239-.338a2.012 2.012 0 0 1-1.416-1.416c-.531-2.118-.386-5.48-.01-7.686a2.011 2.011 0 0 1 1.416-1.416C6.995 6.01 11.992 6 11.992 6s4.997 0 6.239.339c.339.091.648.27.897.519Zm-4.581 4.745-4.146 2.4v-4.8l4.146 2.4Z" fill-rule="evenodd"></path></svg>'},
     {icon:'<svg viewBox="0 0 25 25" width="35" height="35" fill="currentColor" class="block" title="Telegram logo"><path d="m10.282 13.788-.264 3.722c.379 0 .542-.162.74-.358l1.775-1.696 3.679 2.694c.674.376 1.15.178 1.332-.621l2.414-11.315c.215-.998-.36-1.388-1.018-1.143L4.747 10.504c-.969.377-.953.916-.165 1.16l3.63 1.13L16.64 7.52c.397-.263.758-.117.46.145l-6.818 6.123Z"></path></svg>'},
 ]
-
+const footerMenu = {
+    alibaba:[
+       'درباره ما',
+        'تماس با ما',
+        'چرا علی‌بابا',
+        'علی بابا پلاس',
+        'مجله علی‌بابا',
+        'سفرنامه علی بابا'
+    ],
+    services:[
+        'مرکز پشتیبانی آنلاین',
+        'راهنمای خرید',
+        'راهنمای استرداد',
+        'قوانین و مقررات',
+        'پرسش و پاسخ'
+    ],
+    info:[
+        'باشگاه مشتریان',
+        'فروش سازمانی',
+        'همکاری با آژانس‌ها',
+        'فرصت‌های شغلی'
+    ]
+}
 
 const rendNavLeft = (obj , tag) => {
     obj.forEach((item)=>{
@@ -199,3 +225,22 @@ const rendSocial = (obj , tag) => {
     })
 }
 rendSocial(social ,socialTag)
+
+const rendfooterMenu = (obj , tag ,tag1 , tag2) => {
+    obj.alibaba.forEach(item => {
+        const elli = document.createElement('li')
+        elli.innerHTML = item
+        tag.appendChild(elli)
+    })
+    obj.services.forEach(item => {
+        const elli = document.createElement('li')
+        elli.innerHTML = item
+        tag1.appendChild(elli)
+    })
+    obj.info.forEach(item => {
+        const elli = document.createElement('li')
+        elli.innerHTML = item
+        tag2.appendChild(elli)
+    })
+}
+rendfooterMenu(footerMenu , footerMenuTag ,footerMenuTag1 , footerMenuTag2)
